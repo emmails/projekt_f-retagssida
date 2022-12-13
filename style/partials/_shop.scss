@@ -1,0 +1,43 @@
+#topInfoShop {
+    z-index: -1;
+    background-image: url(../images/coffeeBeans.jpg);
+    @include boxShadowImg();
+    height: 400px;
+    position: relative;
+    color: $lightTextColor;
+    h1 {
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        text-align: center;
+    }
+    p {
+        position: absolute;
+        top: 70%;
+        width: 100%;
+        text-align: center;
+        @media (min-width: 768px) {
+            top: 75%;
+        }
+    }
+    @media (min-width: 768px) {
+        margin-bottom: 2%;
+    }
+}
+
+#productsShop {
+    .productLink {
+        color: $darkTextColor;
+        list-style: none;
+        text-decoration: none;
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px inset, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px inset;
+            img {
+                opacity: 0.5;
+            }
+    }
+}
+    @media (min-width: 768px) {
+        margin: 0% 2%;
+    }
+}

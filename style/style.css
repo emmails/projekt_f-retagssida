@@ -1,7 +1,41 @@
+body {
+  background-color: #F8F6F4;
+  color: #231712;
+}
+body h1, body h2, body h3, body a, body button {
+  font-family: "Tajawal", sans-serif;
+}
+body p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+}
+
+.card {
+  z-index: -1;
+  border: 0;
+  border-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.card img {
+  border-radius: 0;
+}
+.card .card-body {
+  background-color: #F8F6F4;
+}
+
+.btn {
+  border-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  background-color: white;
+}
+
 header nav {
   background-color: #F8F6F4;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
   z-index: 1;
+}
+header nav img {
+  width: 60px;
 }
 @media (min-width: 992px) {
   header {
@@ -23,51 +57,10 @@ header #hamburgerMenu {
   border: 0;
 }
 
-body {
-  background-color: #F8F6F4;
-  color: #231712;
-}
-body h1, body h2, body h3, body a, body button {
-  font-family: "Tajawal", sans-serif;
-}
-body p {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 18px;
-}
-
-.card {
-  z-index: -1;
-  border-radius: 0;
-  border: 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-}
-.card img {
-  border-radius: 0;
-}
-.card .card-body {
-  background-color: #F8F6F4;
-}
-
-.btn {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-  border-radius: 0;
-  background-color: white;
-}
-
-@media (min-width: 768px) {
-  #backgroundColor {
-    background-color: #E2D3CA;
-  }
-  #backgroundColor #carouselExampleDark {
-    margin: 0px 200px;
-  }
-  #backgroundColor #productPic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    width: 70%;
-  }
+footer img {
+  width: 60px;
+  display: block;
+  margin: 20px auto 10px auto;
 }
 
 #topHome {
@@ -77,6 +70,7 @@ body p {
 }
 #topHome img {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  width: 100%;
 }
 #topHome h1 {
   position: absolute;
@@ -111,6 +105,18 @@ body p {
   }
 }
 
+@media (min-width: 768px) {
+  #backgroundColorHome {
+    background-color: #E2D3CA;
+  }
+  #backgroundColorHome #carouselExampleDark {
+    margin: 0px 200px;
+  }
+}
+#backgroundColorHome #productsHome h2, #backgroundColorHome #productsHome p {
+  text-shadow: 0px 0px 5px #E2D3CA, 0px 0px 8px #E2D3CA;
+}
+
 #topInfoShop {
   z-index: -1;
   background-image: url(../images/coffeeBeans.jpg);
@@ -143,7 +149,7 @@ body p {
 }
 
 #productsShop .productLink {
-  color: black;
+  color: #231712;
   list-style: none;
   text-decoration: none;
 }
@@ -159,12 +165,51 @@ body p {
   }
 }
 
+.accordion-item {
+  background-color: #F8F6F4;
+}
+.accordion-item #reviewForm {
+  width: 400px;
+}
+.accordion-item #reviewForm input, .accordion-item #reviewForm textarea {
+  border: 0px;
+  border-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.accordion-item #reviewForm legend {
+  display: inline;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .accordion-item #reviewForm {
+    width: 800px;
+    margin-top: 80px;
+  }
+}
+
+#backgroundColorProduct #productPic {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #backgroundColorProduct {
+    background-color: #E2D3CA;
+  }
+  #backgroundColorProduct #productPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    width: 70%;
+  }
+}
+
 #topInfoAbout {
   z-index: -1;
   position: relative;
 }
 #topInfoAbout img {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  width: 100%;
 }
 #topInfoAbout h1 {
   position: absolute;
@@ -238,6 +283,7 @@ body p {
 
 #topImgContact img {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  width: 100%;
 }
 
 #contactUs {
@@ -245,29 +291,11 @@ body p {
 }
 #contactUs input, #contactUs select, #contactUs textarea {
   border: 0px;
-  border-radius: 0px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 @media (min-width: 768px) {
   #contactUs {
-    width: 800px;
-    margin-top: 80px;
-  }
-}
-
-.accordion-item {
-  background-color: #F8F6F4;
-}
-.accordion-item #reviewForm {
-  width: 400px;
-}
-.accordion-item #reviewForm input, .accordion-item #reviewForm textarea {
-  border: 0px;
-  border-radius: 0px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-@media (min-width: 768px) {
-  .accordion-item #reviewForm {
     width: 800px;
     margin-top: 80px;
   }

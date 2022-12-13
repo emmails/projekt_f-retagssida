@@ -1,0 +1,18 @@
+#topImgContact {
+    img {
+        @include boxShadowImg();
+        width: 100%;
+    }
+}
+
+#contactUs {
+    width: 400px;
+    input, select, textarea {
+        border: 0px;
+        @include boxShadow();
+    }
+    @media (min-width: 768px){
+        width: 800px;
+        margin-top: 80px;
+    }
+}

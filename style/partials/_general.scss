@@ -1,0 +1,28 @@
+body {
+    background-color: $backgroundColor;
+    color: $darkTextColor;
+    h1, h2, h3, a, button {
+        font-family: 'Tajawal', sans-serif;
+    }
+    p {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: $paragraphSize;
+    }
+}
+
+.card {
+    z-index: -1;
+    border: 0;
+    @include boxShadow();
+    img {
+        border-radius: 0;;
+    }
+    .card-body {
+        background-color: $backgroundColor;
+    }
+}
+
+.btn {
+    @include boxShadow();
+    background-color: white;
+}

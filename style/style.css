@@ -1,6 +1,7 @@
 header nav {
-  background-color: rgb(255, 255, 255);
+  background-color: #F8F6F4;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  z-index: 1;
 }
 @media (min-width: 992px) {
   header {
@@ -22,16 +23,66 @@ header #hamburgerMenu {
   border: 0;
 }
 
+body {
+  background-color: #F8F6F4;
+  color: #231712;
+}
+body h1, body h2, body h3, body a, body button {
+  font-family: "Tajawal", sans-serif;
+}
+body p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+}
+
+.card {
+  z-index: -1;
+  border-radius: 0;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.card img {
+  border-radius: 0;
+}
+.card .card-body {
+  background-color: #F8F6F4;
+}
+
+.btn {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 0;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  #backgroundColor {
+    background-color: #E2D3CA;
+  }
+  #backgroundColor #carouselExampleDark {
+    margin: 0px 200px;
+  }
+  #backgroundColor #productPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    width: 70%;
+  }
+}
+
 #topHome {
   z-index: -1;
   position: relative;
   color: #E2D3CA;
 }
+#topHome img {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
 #topHome h1 {
   position: absolute;
   top: 20%;
   width: 50%;
-  left: 50%;
+  left: 45%;
   text-align: center;
   font-size: 1.5em;
 }
@@ -41,18 +92,29 @@ header #hamburgerMenu {
   }
 }
 @media (min-width: 992px) {
+  #topHome {
+    margin-bottom: 100px;
+  }
   #topHome h1 {
+    top: 30%;
+    left: 50%;
     font-size: 2em;
   }
 }
 
-#productsHome {
-  z-index: -1;
+#textHome img {
+  width: 100px;
+}
+@media (min-width: 992px) {
+  #textHome {
+    height: 400px;
+  }
 }
 
 #topInfoShop {
   z-index: -1;
   background-image: url(../images/coffeeBeans.jpg);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   height: 400px;
   position: relative;
   color: #E2D3CA;
@@ -80,22 +142,17 @@ header #hamburgerMenu {
   }
 }
 
-.card {
-  z-index: -1;
-  border-radius: 0;
-  border: 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+#productsShop .productLink {
+  color: black;
+  list-style: none;
+  text-decoration: none;
 }
-.card img {
-  border-radius: 0;
-}
-.card:hover {
+#productsShop .productLink:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px inset, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px inset;
 }
-.card:hover img {
+#productsShop .productLink:hover img {
   opacity: 0.5;
 }
-
 @media (min-width: 768px) {
   #productsShop {
     margin: 0% 2%;
@@ -121,10 +178,39 @@ header #hamburgerMenu {
   }
 }
 
-#topImgContact img {
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+#aboutUs span {
+  font-style: italic;
 }
 
+#quoteAbout {
+  z-index: -1;
+  background-image: url(../images/coffeeBeans.jpg);
+  height: 200px;
+  position: relative;
+  margin-bottom: 80px;
+}
+#quoteAbout p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #E2D3CA;
+  font-style: italic;
+  font-size: 25px;
+}
+@media (min-width: 768px) {
+  #quoteAbout {
+    height: 400px;
+  }
+}
+
+#carouselAbout h2 {
+  text-align: center;
+}
+#carouselAbout hr {
+  margin: -10px 40px 20px 40px;
+}
 #carouselAbout .carousel {
   margin: 0px 60px;
 }
@@ -150,10 +236,8 @@ header #hamburgerMenu {
   align-items: flex-start;
 }
 
-.productLink {
-  color: black;
-  list-style: none;
-  text-decoration: none;
+#topImgContact img {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 #contactUs {
@@ -166,6 +250,24 @@ header #hamburgerMenu {
 }
 @media (min-width: 768px) {
   #contactUs {
+    width: 800px;
+    margin-top: 80px;
+  }
+}
+
+.accordion-item {
+  background-color: #F8F6F4;
+}
+.accordion-item #reviewForm {
+  width: 400px;
+}
+.accordion-item #reviewForm input, .accordion-item #reviewForm textarea {
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+@media (min-width: 768px) {
+  .accordion-item #reviewForm {
     width: 800px;
     margin-top: 80px;
   }

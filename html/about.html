@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
     <link rel="stylesheet" href="/style/style.css">
     <script defer src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Tajawal:wght@500&display=swap" rel="stylesheet">
     <script defer src="../js/index.js"></script>
-  </body>
 </head>
 <body>
     <header>
@@ -38,8 +38,8 @@
                   </li>
                 </ul>
                 <div class="d-flex">
-                    <button type="button" class="btn btn-light"><span class="bi bi-heart"></span></button>
-                    <button type="button" class="btn btn-light"><span class="bi bi-cart"></span></button>
+                    <button type="button" class="btn"><span class="bi bi-heart"></span></button>
+                    <button type="button" class="btn"><span class="bi bi-cart"></span></button>
                 </div>
               </div>
             </div>
@@ -47,26 +47,30 @@
     </header>
     <main>
       <section id="topInfoAbout">
-        <img src="../images/coffeeCupHome.jpg" alt="" width="100%">
-        <h1>Rubrik produktsida</h1>
+        <img src="../images/coffeeAbout.png" alt="" width="100%">
     </section>
-    <section class="container">
+    <section class="container my-5" id="aboutUs">
       <div class="row justify-content-center">
-        <p class="col-10 col-lg-">Vi är ett gäng kaffeälskare med visionen om en bättre kaffevärld. Genom att rosta godare, roligare och mer hållbart kaffe vill vi förnya, förbättra och utmana kaffeindustrin. Vårt kaffe är alltid noga selekterat, handplockat av kaffebönder och vänner som delar vår passion och vårt intresse för kvalitet. Vår filosofi bygger på ursprunget, odlarens kunskap och full transparens från planta till kopp.</p>
+        <h1 class="col-10 col-lg-8">Om oss</h1>
+        <p class="col-10 col-lg-8"><span>Kaffe</span> grundades 2004 med visionen om en bättre kaffevärld. Vi ville förändra kaffebranschen i stort och smått. Vi såg att allt kaffe som såldes i Sverige var av låg kvalitet, att bönderna fick dåligt betalt och att kaffet smakade dåligt. Det har varit en lång resa sedan dess, och om vi tittar i backspegeln så inser vi att vi kommit en bit på vägen mot vårt mål. Medvetenheten kring kaffe är mycket högre idag och många fler efterfrågar bra kaffe. Men fortfarande finns väldigt mycket att göra. Bättre kaffe åt folket!</p>
+        <p class="col-10 col-lg-8">Vår idé är egentligen ganska enkel. Vi köper riktigt bra kaffe, som är producerat på ett hållbart sätt och som vi betalar en rättvis summa för. En ganska banal affärsidé och sedvanlig inköpsfilosofi för kaffe kan man tänka. Tyvärr är den varken banal eller särskilt sedvanlig. För det mesta kaffet som köps runtom i världen, inklusive här i Sverige, är objektivt sett inte av särskilt bra kvalitet. Det är dessutom sällan producerat på ett hållbart sätt vare sig ur ett miljömässigt eller ekonomiskt perspektiv. Även om mycket kaffe idag är certifierat, betyder det tyvärr inte hållbart. Det är ganska enkelt att räkna ut att om ett paket kaffe kostar 80 kr/kg i mataffären, och produktionskostnaden för en genomsnittlig kaffebonde i Latinamerika är 27 kr/kg, så blir det inte mycket pengar kvar till bondens lön efter att alla andra ska ha sin del av kakan. Visste du att fler och fler kaffeproducenter överger sina gårdar och ger upp sin produktion? Var ska kaffet då produceras i framtiden?</p>
       </div>
     </section>
+    <section id="quoteAbout">
+        <p>Livet utan kaffe är ett liv som inte levts.</p>
+    </section>
     <section id="carouselAbout">
-      <h2>Anställda</h2>
-
+      <h2 class="my-4 mt-lg-5">Anställda</h2>
+      <hr>
       <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="card">
               <img src="../images/placeholder.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Namn Efternamn</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Titel</h6>
-                <p class="card-text">Beskrivning</p>
+                <h3 class="card-title">Emma Ilstam</h3>
+                <p class="card-subtitle mb-2 text-muted">Titel</p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur assumenda vitae temporibus! Quam, beatae veniam. Perferendis nesciunt.</p>
                 <a href="#" class="card-link">mailadress@kaffe.se</a>
               </div>
             </div>
@@ -75,9 +79,9 @@
             <div class="card">
               <img src="../images/placeholder.jpg" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Namn Efternamn</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Titel</h6>
-                <p class="card-text">Beskrivning</p>
+                <h3 class="card-title">Annie Lago</h3>
+                <p class="card-subtitle mb-2 text-muted">Titel</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis, quis eaque tempore fugiat recusandae tempora incidunt rem possimus voluptate.</p>
                 <a href="#" class="card-link">mailadress@kaffe.se</a>
               </div>
             </div>
@@ -86,9 +90,9 @@
             <div class="card">
               <img src="../images/placeholder.jpg" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Namn Efternamn</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Titel</h6>
-                <p class="card-text">Beskrivning</p>
+                <h3 class="card-title">Namn Efternamn</h3>
+                <p class="card-subtitle mb-2 text-muted">Titel</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat debitis dignissimos eum praesentium dolorum doloribus consequatur culpa quisquam eaque nobis!</p>
                 <a href="#" class="card-link">mailadress@kaffe.se</a>
               </div>
             </div>
@@ -97,9 +101,9 @@
             <div class="card">
               <img src="../images/placeholder.jpg" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Namn Efternamn</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Titel</h6>
-                <p class="card-text">Beskrivning</p>
+                <h3 class="card-title">Namn Efternamn</h3>
+                <p class="card-subtitle mb-2 text-muted">Titel</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia asperiores mollitia quae nobis omnis commodi expedita ipsam quam velit. Veritatis?</p>
                 <a href="#" class="card-link">mailadress@kaffe.se</a>
               </div>
             </div>
@@ -108,9 +112,9 @@
             <div class="card">
               <img src="../images/placeholder.jpg" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Namn Efternamn</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Titel</h6>
-                <p class="card-text">Beskrivning</p>
+                <h3 class="card-title">Namn Efternamn</h3>
+                <p class="card-subtitle mb-2 text-muted">Titel</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestias rerum reprehenderit voluptate nihil at atque placeat aliquam incidunt facilis.</p>
                 <a href="#" class="card-link">mailadress@kaffe.se</a>
               </div>
             </div>
@@ -119,9 +123,9 @@
             <div class="card">
               <img src="../images/placeholder.jpg" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Namn Efternamn</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Titel</h6>
-                <p class="card-text">Beskrivning</p>
+                <h3 class="card-title">Namn Efternamn</h3>
+                <p class="card-subtitle mb-2 text-muted">Titel</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat debitis dignissimos eum praesentium dolorum doloribus consequatur culpa quisquam eaque nobis!</p>
                 <a href="#" class="card-link">mailadress@kaffe.se</a>
               </div>
             </div>
@@ -156,7 +160,7 @@
       </ul>
       <div>
           <img src="" alt="">
-          <p class="text-center text-muted">© 2022 Company, Inc</p>
+          <p class="text-center text-muted">© 2022 Kaffe</p>
       </div>
   </footer>
 </body>
